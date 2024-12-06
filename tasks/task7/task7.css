@@ -1,0 +1,101 @@
+/* Основні стилі для темної теми */
+.page-dark {
+    background-color: #121212;
+    color: #E0E0E0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header-dark {
+    background-color: #1E1E1E;
+    color: #FFFFFF;
+    padding: 20px;
+}
+
+.header__logo {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+.header__menu-list {
+    display: flex;
+    gap: 20px;
+}
+
+.header__menu-link {
+    color: #BBBBBB;
+    text-decoration: none;
+}
+
+.header__cart-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.intro-dark {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    background-color: #1C1C1C;
+    text-align: center;
+}
+
+.intro__title-dark {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+.intro__subtitle-dark {
+    font-size: 1.5rem;
+    color: #AAAAAA;
+}
+
+.intro__description-dark {
+    color: #BBBBBB;
+    font-size: 1.1rem;
+}
+
+.button--primary-dark {
+    background-color: #FF5A5F;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.intro__images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.intro__image-main-container {
+    max-width: 300px; /* Менша ширина для першого фото */
+}
+
+.intro__image--main-dark {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.intro__image-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.intro__image-dark {
+    width: 200px; /* Встановлено ширину для 2 та 3 фото */
+    height: auto;
+    border-radius: 10px;
+}
+
+.header__hamburger-icon {
+    width: 25px;
+    height: 25px;
+}
