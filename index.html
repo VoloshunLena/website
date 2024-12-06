@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Особистий вебсайт</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffe6e6;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            position: relative;
+        }
+
+        .main-header {
+            background-color: #ff4d4d;
+            color: white;
+            padding: 20px 0;
+        }
+
+        .main-header h1 {
+            margin: 0;
+            text-align: center;
+            font-size: 2.5em;
+        }
+
+        .main-header span {
+            color: #ffd1dc;
+        }
+
+        .navigation ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            margin: 20px 0 0 0;
+        }
+
+        .navigation ul li {
+            margin: 0 15px;
+        }
+
+        .navigation ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        .navigation ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .content {
+            margin: 20px 0;
+        }
+
+        .about-section {
+            background-color: #ffcccc;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .about-section h2 {
+            color: #ff4d4d;
+        }
+
+        .about-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .about-section ul li {
+            margin: 10px 0;
+        }
+
+        .about-section ul li a {
+            color: #ff4d4d;
+            text-decoration: none;
+        }
+
+        .about-section ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .main-footer {
+            background-color: #ff4d4d;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .main-footer img {
+            width: 30px;
+            height: 30px;
+            margin: 0 10px;
+        }
+
+        .main-footer a {
+            color: white;
+        }
+
+        .decorative-image {
+            position: absolute;
+            top: 50px;
+            right: 20px;
+            max-width: 300px;
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+<header class="main-header">
+    <div class="container">
+        <h1>Особистий вебсайт</h1>
+        <nav class="navigation">
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="about.html">Про мене</a></li>
+                <li><a href="practical.html">Практичні роботи</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="content container">
+    <section id="about" class="about-section">
+        <h2>Ласкаво просимо!</h2>
+        <p>
+            Мене звати Лена Волошун!<br>
+            Я студентка групи КІД-41.<br>
+            Це мій особистий сайт.
+        </p>
+        <h3>Контактні дані:</h3>
+        <ul>
+            <li>Email: <a href="mailto:lena2003volo@gmail.com">lena2003volo@gmail.com</a></li>
+            <li>Телефон: +380732031611</li>
+            <li>GitHub: <a href="https://github.com/VoloshunLena" target="_blank">https://github.com/VoloshunLena</a></li>
+            <li>Телеграм: @len_qm</li>
+        </ul>
+    </section>
+    <img src="images/2.png" alt="Decorative Image" class="decorative-image">
+</main>
+
+<footer class="main-footer">
+    <p>Рада вас бачити на моєму сайті!</p>
+    <a href="https://www.instagram.com/qmvipo/" target="_blank">
+        <img src="images/inst.jpeg" alt="Instagram">
+    </a>
+    <a href="https://github.com/VoloshunLena" target="_blank">
+        <img src="images/git.png" alt="GitHub">
+    </a>
+</footer>
+</body>
+</html>
