@@ -1,1 +1,190 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ноутбук Acer Aspire 5</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+    <style>
+        /* Загальні стилі */
+        body {
+            font-family: 'Merriweather', serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #F4F4F9;
+            color: #1E3A8A;
+        }
+
+        /* Контейнер для вирівнювання елементів */
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+
+        /* Стилі для header */
+        header {
+            background-color: #1E3A8A;
+            color: #F4F4F9;
+            padding: 20px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            color: #F4F4F9;
+            text-decoration: none;
+            font-weight: 500;
+            text-transform: uppercase;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #4CAF50;
+        }
+
+        /* Основний блок intro */
+        .intro {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #fff;
+            padding: 80px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            margin-top: 30px;
+        }
+
+        .intro-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 50px;
+        }
+
+        .text-content {
+            flex: 1;
+            max-width: 500px;
+            color: #1E3A8A;
+        }
+
+        .headline {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .subheadline {
+            font-size: 1.3rem;
+            font-weight: 400;
+            margin-bottom: 30px;
+        }
+
+        .price-button {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .price {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #333;
+        }
+
+        .cta-link {
+            padding: 12px 25px;
+            background-color: #4CAF50;
+            color: #F4F4F9;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 50px;
+            text-transform: uppercase;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .cta-link:hover {
+            background-color: #45a049;
+            transform: translateY(-2px);
+        }
+
+        /* Стилі для картинки */
+        .image-content img {
+            max-width: 450px;
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1E3A8A;
+            color: #F4F4F9;
+            padding: 20px 0;
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+<div class="page-container">
+<!-- Верхня панель -->
+<header>
+    <div class="container header-container">
+        <div class="logo">Acer</div>
+        <nav class="nav-links">
+            <a href="#">Головна</a>
+            <a href="#">Продукт</a>
+            <a href="#">Відгуки</a>
+        </nav>
+    </div>
+</header>
+
+<!-- Основний контент -->
+<section class="intro">
+    <div class="container intro-container">
+        <div class="text-content">
+            <h2 class="headline">Ноутбук Acer Aspire 5 — потужність у вашій кишені.</h2>
+            <p class="subheadline">Ідеальний ноутбук для роботи, навчання та розваг.</p>
+            <div class="price-button">
+                <p class="price">$799</p>
+                <a href="#" class="cta-link">Купити зараз</a>
+            </div>
+        </div>
+        <div class="image-content">
+            <img src="tovar.jpg" alt="Acer Aspire 5">
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2024 Acer. Всі права захищені.</p>
+    </div>
+</footer>
+</div>
+</body>
+</html>
 
