@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catch the Pokemon!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Press Start 2P', cursive;
+            overflow: hidden;
+            background: linear-gradient(120deg, #34ace0, #33d9b2, #ffb142, #ff5252);
+            background-size: 400% 400%;
+            animation: backgroundAnimation 8s infinite;
+        }
+
+        @keyframes backgroundAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .game-container {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .pokemon {
+            position: absolute;
+            width: 80px;
+            cursor: pointer;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+
+        .pokeball {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            animation: spin 1s infinite linear;
+        }
+
+        @keyframes spin {
+            0% { transform: translateX(-50%) rotate(0deg); }
+            100% { transform: translateX(-50%) rotate(360deg); }
+        }
+
+        .score {
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            font-size: 18px;
+            color: white;
+            text-shadow: 2px 2px 4px #000;
+        }
+
+        .restart-button {
+            position: absolute;
+            bottom: 50px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 10px 20px;
+            background-color: #ff5252;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            font-family: 'Press Start 2P', cursive;
+            display: none;
+        }
+
+        .restart-button:hover {
+            background-color: #ff3b3b;
+        }
+    </style>
+</head>
+<body>
+<div class="game-container">
+    <!-- Покемони -->
+    <img src="https://img.pokemondb.net/sprites/black-white/anim/normal/pikachu.gif" alt="Pikachu" class="pokemon" id="pokemon1">
+    <img src="https://img.pokemondb.net/sprites/black-white/anim/normal/eevee.gif" alt="Eevee" class="pokemon" id="pokemon2">
+    <img src="https://img.pokemondb.net/sprites/black-white/anim/normal/bulbasaur.gif" alt="Bulbasaur" class="pokemon" id="pokemon3">
+    <img src="https://img.pokemondb.net/sprites/black-white/anim/normal/charmander.gif" alt="Charmander" class="pokemon" id="pokemon4">
+    <img src="https://img.pokemondb.net/sprites/black-white/anim/normal/squirtle.gif" alt="Squirtle" class="pokemon" id="pokemon5">
+
+    <!-- Покебол -->
+    <img src="https://img.pokemondb.net/sprites/items/poke-ball.png" alt="Pokeball" class="pokeball">
+
+    <!-- Рахунок -->
+    <div class="score">Score: <span id="score">0</span></div>
+</div>
+<!-- Кнопка перезапуску -->
+<button class="restart-button" id="restartButton">Restart Game</button>
+<script>
+    const pokemons = document.querySelectorAll('.pokemon');
+    const scoreDisplay = document.getElementById('score');
+    const restartButton = document.getElementById('restartButton');
+    let score = 0;
+
+    pokemons.forEach(pokemon => {
+        pokemon.style.top = `${Math.random() * 80}vh`;
+        pokemon.style.left = `${Math.random() * 90}vw`;
+        pokemon.addEventListener('click', () => {
+            score++;
+            scoreDisplay.textContent = score;
+            pokemon.style.top = `${Math.random() * 80}vh`;
+            pokemon.style.left = `${Math.random() * 90}vw`;
+        });
+    });
+
+    restartButton.addEventListener('click', () => {
+        score = 0;
+        scoreDisplay.textContent = score;
+        restartButton.style.display = 'none';
+        pokemons.forEach(pokemon => {
+            pokemon.style.top = `${Math.random() * 80}vh`;
+            pokemon.style.left = `${Math.random() * 90}vw`;
+        });
+    });
+
+    setTimeout(() => {
+        restartButton.style.display = 'block';
+    }, 30000); // 30 секунд гри
+</script>
+</body>
+</html>

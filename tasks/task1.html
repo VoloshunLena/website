@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практична робота №1 - Розклад занять</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom, #a8d08d, #ffeb3b);
+            color: #33691e;
+        }
+
+        header {
+            background-color: #33691e;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 10px;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #ffeb3b;
+        }
+
+        main {
+            margin: 20px;
+        }
+
+        section h2 {
+            color: #33691e;
+            font-size: 1.8rem;
+            border-bottom: 2px solid #ffeb3b;
+            padding-bottom: 10px;
+        }
+
+        p {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: center;
+            border: 1px solid #33691e;
+        }
+
+        th {
+            background-color: #33691e;
+            color: #fff;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:hover {
+            background-color: #ffeb3b;
+        }
+
+        footer {
+            background-color: #33691e;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        footer a {
+            color: #ffeb3b;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Практична робота №1</h1>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Головна</a></li>
+            <li><a href="../practical.html">Практичні роботи</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section>
+        <h2>Розклад занять на місяць</h2>
+        <p>Ось розклад занять для групи <strong>КІД-41</strong> на поточний місяць:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Дата</th>
+                    <th>Час</th>
+                    <th>Дисципліна</th>
+                    <th>Викладач</th>
+                    <th>Аудиторія</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>18.11.2024</td>
+                    <td>09:45 - 11:20</td>
+                    <td>Методи та засоби штучного інтелекту</td>
+                    <td>Звенигородський О.С.</td>
+                    <td>Дистанц.</td>
+                </tr>
+                <tr>
+                    <td>18.11.2024</td>
+                    <td>11:45 - 13:20</td>
+                    <td>Паралельні та розподілені обчислення</td>
+                    <td>Торошанко Я.І.</td>
+                    <td>Дистанц.</td>
+                </tr>
+                <tr>
+                    <td>18.11.2024</td>
+                    <td>13:30 - 15:05</td>
+                    <td>Штучний інтелект</td>
+                    <td>Кисіль Т.М.</td>
+                    <td>Дистанц.</td>
+                </tr>
+                <tr>
+                    <td>19.11.2024</td>
+                    <td>11:45 - 13:20</td>
+                    <td>Засади відкриття власного бізнесу</td>
+                    <td>Чатченко О.Є.</td>
+                    <td>Дистанц.</td>
+                </tr>
+                <tr>
+                    <td>19.11.2024</td>
+                    <td>13:30 - 15:05</td>
+                    <td>Паралельні та розподілені обчислення</td>
+                    <td>Торошанко Я.І.</td>
+                    <td>Дистанц.</td>
+                </tr>
+                <tr>
+                    <td>19.11.2024</td>
+                    <td>17:00 - 18:35</td>
+                    <td>Діагностика та тестування МІ</td>
+                    <td>Асєєва Л.А.</td>
+                    <td>Дистанц.</td>
+                </tr>
+                <tr>
+                    <td>20.11.2024</td>
+                    <td>15:15 - 16:50</td>
+                    <td>Діагностика та тестування МІ</td>
+                    <td>Асєєва Л.А.</td>
+                    <td>Дистанц.</td>
+                </tr>
+                <tr>
+                    <td>20.11.2024</td>
+                    <td>17:00 - 18:35</td>
+                    <td>Діагностика та тестування МІ</td>
+                    <td>Асєєва Л.А.</td>
+                    <td>Дистанц.</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</main>
+
+<footer>
+    <p>Практична робота №1</p>
+    <p><a href="../index.html">Повернутися на головну</a></p>
+</footer>
+</body>
+</html>
